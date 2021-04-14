@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SoundCloudApp</string>
+    <string name="album_artwork">Album ArtWork</string>
+    <string name="track_artwork">Track ArtWork</string>
+</resources>
