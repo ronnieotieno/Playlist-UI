@@ -28,17 +28,14 @@ class PlayListFragment : DaggerFragment(R.layout.fragment_play_list) {
     private var snackBar: Snackbar? = null
 
     //Injected by Dagger2
+//    @Inject
+//    lateinit var viewModelFactory: ViewModelProvider.Factory
     @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
-    private val viewModel: PlayListViewModel by viewModels {
-        viewModelFactory
-    }
+    lateinit var viewModel: PlayListViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding = FragmentPlayListBinding.bind(view)
-
 
         setAdapter()
         startObservingResponse()
@@ -79,8 +76,6 @@ class PlayListFragment : DaggerFragment(R.layout.fragment_play_list) {
 
                 }
             }
-
-
         })
 
     }

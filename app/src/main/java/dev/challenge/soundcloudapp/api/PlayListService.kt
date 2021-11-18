@@ -9,7 +9,6 @@ import retrofit2.http.Query
  * A [retrofit2.Retrofit] service interface, see [Retrofit](https://square.github.io/retrofit/)
  */
 interface PlayListService {
-
     @GET("79670980")
     suspend fun getPlayList(
         @Query("clientbv _id") clientId: String = BuildConfig.CLIENT_ID,

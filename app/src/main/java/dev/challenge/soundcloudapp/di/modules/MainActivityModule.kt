@@ -12,10 +12,6 @@ import dev.challenge.soundcloudapp.presentation.views.MainActivity
 @Suppress("unused")
 @Module
 abstract class MainActivityModule {
-    @ContributesAndroidInjector(
-        modules = [
-            FragmentBuildersModule::class
-        ]
-    )
+    @ContributesAndroidInjector
     abstract fun contributeMainActivity(): MainActivity
 }

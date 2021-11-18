@@ -14,5 +14,4 @@ import dev.challenge.soundcloudapp.presentation.views.PlayListFragment
 abstract class FragmentBuildersModule {
     @ContributesAndroidInjector
     abstract fun contributePlayListFragment(): PlayListFragment
-
 }

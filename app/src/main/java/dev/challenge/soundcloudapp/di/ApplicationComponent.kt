@@ -8,6 +8,7 @@ import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import dev.challenge.soundcloudapp.SoundCloudApp
 import dev.challenge.soundcloudapp.di.modules.ApplicationModule
+import dev.challenge.soundcloudapp.di.modules.FragmentBuildersModule
 import dev.challenge.soundcloudapp.di.modules.MainActivityModule
 import javax.inject.Singleton
 
@@ -16,7 +17,8 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         ApplicationModule::class,
-        MainActivityModule::class
+        MainActivityModule::class,
+        FragmentBuildersModule::class
     ]
 )
 /**

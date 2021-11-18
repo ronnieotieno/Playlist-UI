@@ -55,7 +55,6 @@ class TrackListAdapter(private val onClick: (Track) -> Unit) :
             val minutes = track.duration / 1000 / 60
             val seconds = track.duration / 1000 % 60
 
-
             binding.time = "$minutes:$seconds"
 
 
